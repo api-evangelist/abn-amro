@@ -1,0 +1,255 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0",
+        "title": "tikkie-v1-portal",
+        "description": "TODO: Add Description",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "https:\/\/api-sandbox.abnamro.com\/v1"
+    ],
+    "paths": {
+        "\/oauth\/token": {
+            "post": {
+                "summary": "Get Access Token",
+                "description": "**Get Access Token (sandbox)**\n\nThis operation will generate a valid access token to access Tikkie API. To get valid access token you need to generate a valid JWT as described [here](https:\/\/developer.abnamro.com\/\/get-started#authentication)",
+                "operationId": "GetAccessToken",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/tikkie\/platforms": {
+            "post": {
+                "summary": "Add Platform",
+                "description": "**Post tikkie platform (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+                "operationId": "AddPlatform",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "Get Platforms",
+                "description": "**Get platforms (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+                "operationId": "GetPlatforms",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/tikkie\/platforms\/{platformToken}\/users": {
+            "post": {
+                "summary": "Add User",
+                "description": "**Post tikkie user (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+                "operationId": "AddUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "platformToken",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "Get Users",
+                "description": "**Get tikkie user (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+                "operationId": "GetUsers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "platformToken",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/tikkie\/platforms\/{platformToken}\/users\/{userToken}\/bankaccounts\/{accountToken}\/paymentrequests": {
+            "post": {
+                "summary": "Post Payment Request",
+                "description": "**Post tikkie payment request (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+                "operationId": "PostPaymentRequest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "platformToken",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "userToken",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "accountToken",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/tikkie\/platforms\/{platformToken}\/users\/{userToken}\/paymentrequests": {
+            "get": {
+                "summary": "Get User Payment Requests",
+                "description": "**Get tikkie user payment requests (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+                "operationId": "GetUserPaymentRequests",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "fromDate",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "platformToken",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "userToken",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/tikkie\/platforms\/{platformToken}\/users\/{userToken}\/paymentrequests\/{paymentToken}": {
+            "get": {
+                "summary": "Get Single Payment Request",
+                "description": "**Get tikkie payment request (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+                "operationId": "GetSinglePaymentRequest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "platformToken",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "userToken",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "paymentToken",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AddPlatformRequest": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "phoneNumber": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "platformUsage": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "AddUserRequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "iban": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "bankAccountLabel": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "phoneNumber": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PostPaymentRequestRequest": {
+                "type": "object",
+                "properties": {
+                    "amountInCents": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "currency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
