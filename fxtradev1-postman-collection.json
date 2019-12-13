@@ -1,0 +1,327 @@
+{
+    "id": "ebaa650959afd6f7a90e929beaec89e2",
+    "name": "fxtrade-v1",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "ef58b27fce0e6d14d348481123c30e0d",
+            "name": "Get Access Token",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/token.oauth2",
+            "description": "To invoke an API you must obtain an access token. The token obtained, together with the API key that you obtained from the developer portal during onboarding for sandbox, is required for every call to the FX Trade API.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "ba193d3ab1970a16d387e496992673d4",
+            "name": "Get Allowed Currency Pairs",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/allowedcurrencypairs",
+            "description": "Returns the currency pairs for which a spot or outright rate, quote, and order can be requested.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "768789937cc16b0f9c99e654c3872de7",
+            "name": "Get Settlement Account Groups",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/settlementaccountgroups",
+            "description": "Returns the settlement account group identifiers that are used to control the settlement of an amount for the FX spot, or outright trade, on the payment accounts at settlement date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "d7be2e047dfe75d60596a545da501644",
+            "name": "Get Indicative Rate",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/rates\/EURUSD",
+            "description": "Returns the FX rate for the currency pair you specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "1a25ca727653dba76fcb80fb55391120",
+            "name": "Get Indicative Rates",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/rates",
+            "description": "Returns the FX rates for the currency pairs you specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "currencyPairs",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fxRateTenor",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "d6fb7b56d1c22f9d9fc4c1f9b12102ab",
+            "name": "Post Quote",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/quotes",
+            "description": "Submits a request for quote for an FX outright.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "1c63baf5be0d8e692df97ffd036504d7",
+            "name": "Get Quotes",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/quotes",
+            "description": "Returns the FX Quotes that were requested earlier.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "quoteStatus",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDateTime",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c436e4796a9651a13cf91e8a0281515",
+            "name": "Post Order",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/orders",
+            "description": "Submits an order for an FX outright based upon a quote that has been obtained by the previous request for quote.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "e43553f975e2ecf9d31d0d162f6b7518",
+            "name": "Get Orders",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/orders",
+            "description": "Returns the FX Orders that were requested earlier.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "startDateTime",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endDateTime",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "584ae7e1bdd41c647db2c15eb5b691bb",
+            "name": "Get Quote",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/quotes\/{quoteId}",
+            "description": "Returns the FX Quote that was requested earlier.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "quoteId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        },
+        {
+            "id": "6aaeb5283ce4a874bcfde3c743880431",
+            "name": "Get Order",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/orders\/{orderId}",
+            "description": "Returns the FX Order that was requested earlier.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orderId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ebaa650959afd6f7a90e929beaec89e2",
+            "rawModeData": ""
+        }
+    ]
+}
