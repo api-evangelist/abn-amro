@@ -1,0 +1,74 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0",
+        "title": "tikkie-fastcheckout-v1",
+        "description": "Collection of calls that will test the tikkie fast checkout API",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/fastcheckout"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "Post_Order_Request": {
+                "type": "object",
+                "properties": {
+                    "referenceId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "shippingCostsInCents": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "discountInCents": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "currency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "expiration": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "redirectUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "notificationUrl": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "items": {
+                "type": "array"
+            },
+            "Item": {
+                "type": "object",
+                "properties": {
+                    "itemName": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "priceInCents": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "quantity": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    }
+}
