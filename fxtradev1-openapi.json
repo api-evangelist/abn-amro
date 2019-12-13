@@ -1,0 +1,294 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0",
+        "title": "fxtrade-v1",
+        "description": "This Postman collection contains the examples as used in the tutorial section.",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "https:\/\/auth-sandbox.connect.abnamro.com\/as",
+        "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade"
+    ],
+    "paths": {
+        "\/token.oauth2": {
+            "post": {
+                "summary": "Get Access Token",
+                "description": "To invoke an API you must obtain an access token. The token obtained, together with the API key that you obtained from the developer portal during onboarding for sandbox, is required for every call to the FX Trade API.",
+                "operationId": "GetAccessToken",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/allowedcurrencypairs": {
+            "get": {
+                "summary": "Get Allowed Currency Pairs",
+                "description": "Returns the currency pairs for which a spot or outright rate, quote, and order can be requested.",
+                "operationId": "GetAllowedCurrencyPairs",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/settlementaccountgroups": {
+            "get": {
+                "summary": "Get Settlement Account Groups",
+                "description": "Returns the settlement account group identifiers that are used to control the settlement of an amount for the FX spot, or outright trade, on the payment accounts at settlement date.",
+                "operationId": "GetSettlementAccountGroups",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/rates\/EURUSD": {
+            "get": {
+                "summary": "Get Indicative Rate",
+                "description": "Returns the FX rate for the currency pair you specified.",
+                "operationId": "GetIndicativeRate",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/rates": {
+            "get": {
+                "summary": "Get Indicative Rates",
+                "description": "Returns the FX rates for the currency pairs you specified.",
+                "operationId": "GetIndicativeRates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "currencyPairs",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "fxRateTenor",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/quotes": {
+            "post": {
+                "summary": "Post Quote",
+                "description": "Submits a request for quote for an FX outright.",
+                "operationId": "PostQuote",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "Get Quotes",
+                "description": "Returns the FX Quotes that were requested earlier.",
+                "operationId": "GetQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "quoteStatus",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "startDateTime",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/orders": {
+            "post": {
+                "summary": "Post Order",
+                "description": "Submits an order for an FX outright based upon a quote that has been obtained by the previous request for quote.",
+                "operationId": "PostOrder",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "Get Orders",
+                "description": "Returns the FX Orders that were requested earlier.",
+                "operationId": "GetOrders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "startDateTime",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "endDateTime",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/quotes\/{quoteId}": {
+            "get": {
+                "summary": "Get Quote",
+                "description": "Returns the FX Quote that was requested earlier.",
+                "operationId": "GetQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "quoteId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/orders\/{orderId}": {
+            "get": {
+                "summary": "Get Order",
+                "description": "Returns the FX Order that was requested earlier.",
+                "operationId": "GetOrder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orderId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "PostQuoteRequest": {
+                "type": "object",
+                "properties": {
+                    "consumerQuoteReference": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "quoteRequest": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "settlementAccountGroup": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "quoteRequest": {
+                "type": "object",
+                "properties": {
+                    "buyCurrency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "sellCurrency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "sellAmount": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "settlement": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PostOrderRequest": {
+                "type": "object",
+                "properties": {
+                    "consumerQuoteReference": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "orderRequest": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "settlementAccountGroup": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "quoteSignature": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "orderRequest": {
+                "type": "object",
+                "properties": {
+                    "buyCurrency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "sellCurrency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "sellAmount": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "settlement": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
