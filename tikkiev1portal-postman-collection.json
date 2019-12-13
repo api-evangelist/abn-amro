@@ -1,0 +1,293 @@
+{
+    "id": "7252d19577bb9b763536feff6caacf60",
+    "name": "tikkie-v1-portal",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "9f4438706642be8a13add84a4ef6381d",
+            "name": "Get Access Token",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/oauth\/token",
+            "description": "**Get Access Token (sandbox)**\n\nThis operation will generate a valid access token to access Tikkie API. To get valid access token you need to generate a valid JWT as described [here](https:\/\/developer.abnamro.com\/\/get-started#authentication)",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7252d19577bb9b763536feff6caacf60",
+            "rawModeData": ""
+        },
+        {
+            "id": "5b3de81329d42e8428ff135c6cc55390",
+            "name": "Add Platform",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms",
+            "description": "**Post tikkie platform (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7252d19577bb9b763536feff6caacf60",
+            "rawModeData": ""
+        },
+        {
+            "id": "e692bbcc20d11d6ad426ed859ded2b86",
+            "name": "Get Platforms",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms",
+            "description": "**Get platforms (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7252d19577bb9b763536feff6caacf60",
+            "rawModeData": ""
+        },
+        {
+            "id": "68265dbdfd15c66613cea967e4e65d04",
+            "name": "Add User",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users",
+            "description": "**Post tikkie user (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "platformToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7252d19577bb9b763536feff6caacf60",
+            "rawModeData": ""
+        },
+        {
+            "id": "695e5d987d33ec732fa818c2484919c3",
+            "name": "Get Users",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users",
+            "description": "**Get tikkie user (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "platformToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7252d19577bb9b763536feff6caacf60",
+            "rawModeData": ""
+        },
+        {
+            "id": "b3c251ab2ffba4a6bdb809770f52babe",
+            "name": "Post Payment Request",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users\/{userToken}\/bankaccounts\/{accountToken}\/paymentrequests",
+            "description": "**Post tikkie payment request (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "platformToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "accountToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7252d19577bb9b763536feff6caacf60",
+            "rawModeData": ""
+        },
+        {
+            "id": "1c40c590d0921ea43a1c23669d520493",
+            "name": "Get User Payment Requests",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users\/{userToken}\/paymentrequests",
+            "description": "**Get tikkie user payment requests (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDate",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "platformToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7252d19577bb9b763536feff6caacf60",
+            "rawModeData": ""
+        },
+        {
+            "id": "967feedd3bdb7012711fb6eb0262d1dd",
+            "name": "Get Single Payment Request",
+            "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users\/{userToken}\/paymentrequests\/{paymentToken}",
+            "description": "**Get tikkie payment request (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "platformToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "paymentToken",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7252d19577bb9b763536feff6caacf60",
+            "rawModeData": ""
+        }
+    ]
+}
