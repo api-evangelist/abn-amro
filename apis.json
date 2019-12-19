@@ -13,8 +13,8 @@
         "profile",
         "uk banks"
     ],
-    "created": "2019-12-12",
-    "modified": "2019-12-12",
+    "created": "2019-12-18",
+    "modified": "2019-12-18",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -33,6 +33,10 @@
                 {
                     "type": "x-openapi",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/fxtradev1-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/fxtradev1-postman-collection.json"
                 },
                 {
                     "type": "x-postman-collecction",
@@ -59,6 +63,10 @@
                 {
                     "type": "x-postman-collecction",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiev1portal-postman-collection.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiev1portal-postman-collection.json"
                 }
             ]
         },
@@ -81,6 +89,10 @@
                 {
                     "type": "x-postman-collecction",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiefastcheckoutv1-postman-collection.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiefastcheckoutv1-postman-collection.json"
                 }
             ]
         },
@@ -99,6 +111,14 @@
                 {
                     "type": "x-openapi",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/abn-amro-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/abn-amro-postman-collection.json"
                 },
                 {
                     "type": "x-postman-collecction",
