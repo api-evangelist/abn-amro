@@ -1,5 +1,5 @@
 {
-    "id": "10ad23c19316a013641ee56cf562849c",
+    "id": "030b70f14d45e05fa115bb855da05db6",
     "name": "Tikkie Fast Checkout API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "19cc429325a952d4db4c8c1bd44c92fb",
+            "id": "53fbc855b6579ddaedf8b4376c25dee8",
             "name": "On sandbox only - Create a test merchant to work with on sandbox.",
             "url": "http:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/fastcheckout\/merchant",
             "description": "",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "10ad23c19316a013641ee56cf562849c",
+            "collectionId": "030b70f14d45e05fa115bb855da05db6",
             "rawModeData": ""
         },
         {
-            "id": "34c1e4551b1ac75f541b9fb051fe5e45",
+            "id": "e6d0abf16a37a6283e9dad3fd7a9e596",
             "name": "Creates an order that represents the items in your customer's shopping cart.",
             "url": "http:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/fastcheckout\/orders",
             "description": "",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "10ad23c19316a013641ee56cf562849c",
+            "collectionId": "030b70f14d45e05fa115bb855da05db6",
             "rawModeData": ""
         },
         {
-            "id": "24b8b822a9b939817445f274224610a4",
+            "id": "6ef58e69f4c91049e8fd36f79c2d804b",
             "name": "Fetches the details of an order and displays its status.",
             "url": "http:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/fastcheckout\/orders\/{orderToken}",
             "description": "",
@@ -83,7 +83,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "10ad23c19316a013641ee56cf562849c",
+            "collectionId": "030b70f14d45e05fa115bb855da05db6",
             "rawModeData": ""
         }
     ]
