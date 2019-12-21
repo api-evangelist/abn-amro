@@ -1,5 +1,5 @@
 {
-    "id": "0f7d07ec05c6a360c596c835a7bdff1c",
+    "id": "043809116faf7d872a1f81886629d143",
     "name": "tikkie-v1-portal",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "3922b707fc0b101b7c4c72a3d9a2adea",
+            "id": "4999643fa64e037081de616bdd50262e",
             "name": "Get Access Token",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/oauth\/token",
             "description": "**Get Access Token (sandbox)**\n\nThis operation will generate a valid access token to access Tikkie API. To get valid access token you need to generate a valid JWT as described [here](https:\/\/developer.abnamro.com\/\/get-started#authentication)",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0f7d07ec05c6a360c596c835a7bdff1c",
+            "collectionId": "043809116faf7d872a1f81886629d143",
             "rawModeData": ""
         },
         {
-            "id": "9364fbbdef95778a0b81f7dd813d96c8",
+            "id": "d99fd60c5619d56a2f35e2524b6b7efc",
             "name": "Add Platform",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms",
             "description": "**Post tikkie platform (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0f7d07ec05c6a360c596c835a7bdff1c",
+            "collectionId": "043809116faf7d872a1f81886629d143",
             "rawModeData": ""
         },
         {
-            "id": "88df47e65c5fca7d1879a62ddb7db5f0",
+            "id": "fa30b9a04e698bf342ea515331ba1af5",
             "name": "Get Platforms",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms",
             "description": "**Get platforms (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0f7d07ec05c6a360c596c835a7bdff1c",
+            "collectionId": "043809116faf7d872a1f81886629d143",
             "rawModeData": ""
         },
         {
-            "id": "3f2922d8549e7e5c95dae504dec67231",
+            "id": "22d83d2fd5fbd48b75ad3895d6dc21d9",
             "name": "Add User",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users",
             "description": "**Post tikkie user (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0f7d07ec05c6a360c596c835a7bdff1c",
+            "collectionId": "043809116faf7d872a1f81886629d143",
             "rawModeData": ""
         },
         {
-            "id": "f9aeca752bf8f9af81a098a60f92ad4a",
+            "id": "fec05bc418ceb001916dcd3f058975c5",
             "name": "Get Users",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users",
             "description": "**Get tikkie user (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
@@ -137,11 +137,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0f7d07ec05c6a360c596c835a7bdff1c",
+            "collectionId": "043809116faf7d872a1f81886629d143",
             "rawModeData": ""
         },
         {
-            "id": "9d2f22c97c47e60df10bcc747cf95c31",
+            "id": "575c2905d1df123ecd558d93651f7b21",
             "name": "Post Payment Request",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users\/{userToken}\/bankaccounts\/{accountToken}\/paymentrequests",
             "description": "**Post tikkie payment request (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
@@ -182,11 +182,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0f7d07ec05c6a360c596c835a7bdff1c",
+            "collectionId": "043809116faf7d872a1f81886629d143",
             "rawModeData": ""
         },
         {
-            "id": "28e307d9b2f55d4408ad03b7078ba9c0",
+            "id": "8aba4020d44815dfbd05869f56214af5",
             "name": "Get User Payment Requests",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users\/{userToken}\/paymentrequests",
             "description": "**Get tikkie user payment requests (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
@@ -241,11 +241,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0f7d07ec05c6a360c596c835a7bdff1c",
+            "collectionId": "043809116faf7d872a1f81886629d143",
             "rawModeData": ""
         },
         {
-            "id": "aa63b6fbbfab521bdeaab605720e0320",
+            "id": "ea5af573f2b7c6c3bcda3b9ac8119640",
             "name": "Get Single Payment Request",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/platforms\/{platformToken}\/users\/{userToken}\/paymentrequests\/{paymentToken}",
             "description": "**Get tikkie payment request (sandbox)**\n\nBefore you can start using the Tikkie API, you need to obtain an access token from the [OAuth API](https:\/\/developer.abnamro.com\/\/get-started#authentication).\n\n\nTechnical Detils of this operation can be found [here](https:\/\/developer.abnamro.com\/api\/tikkie\/technical-details).",
@@ -286,7 +286,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0f7d07ec05c6a360c596c835a7bdff1c",
+            "collectionId": "043809116faf7d872a1f81886629d143",
             "rawModeData": ""
         }
     ]
