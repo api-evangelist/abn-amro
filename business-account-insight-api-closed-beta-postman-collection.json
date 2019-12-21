@@ -1,0 +1,195 @@
+{
+    "id": "636c73f3f05fd3a49d99280a1971a96e",
+    "name": "Business Account Insight API closed beta",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "75d960f6660ef843c4b7b835cc7ea2f3",
+            "name": "Get Accounts Account Number Transactions",
+            "url": "https:\/\/api.abnamro.com\/v1\/accounts\/{accountNumber}\/transactions",
+            "description": "Retrieve a list of transactions for a specific account number. A maximum of 50 transactions are returned.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accountNumber",
+                    "description": "IBAN of the account to be retrieve transactions on.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bookDateFrom",
+                    "description": "Retrieves transactions that are most recent than this date only (format: yyyy-mm-dd). If a field or date is ommitted, the last 50 transactions are retrieved. Transactions history can be retrieved up to 18 months from the current date.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "bookDateTo",
+                    "description": "Retrieves transactions preceding this date (format: yyyy-mm-dd).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "nextPageKey",
+                    "description": "Reference key of the last retrieved transaction. This can be used as a query parameter in the next call to fetch the next set of transactions. This key is only provided if more than 50 transactions are present.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "636c73f3f05fd3a49d99280a1971a96e",
+            "rawModeData": ""
+        },
+        {
+            "id": "fe0b8540704642090dcf09f4886f837a",
+            "name": "Get Accounts Account Number Balances",
+            "url": "https:\/\/api.abnamro.com\/v1\/accounts\/{accountNumber}\/balances",
+            "description": "Retrieves the details of the account, such as the book balance of the account, and currency.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accountNumber",
+                    "description": "IBAN of the account to be retrieve transactions on.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "636c73f3f05fd3a49d99280a1971a96e",
+            "rawModeData": ""
+        },
+        {
+            "id": "2d595cf719a8ffbdb3f31865db6ac2b3",
+            "name": "Get Accounts Account Number Details",
+            "url": "https:\/\/api.abnamro.com\/v1\/accounts\/{accountNumber}\/details",
+            "description": "Retrieve the details of the account, such as currency and account holder name.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accountNumber",
+                    "description": "IBAN of the account to be retrieve transactions on.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "636c73f3f05fd3a49d99280a1971a96e",
+            "rawModeData": ""
+        },
+        {
+            "id": "636b0c7af641a39e45b66e9f53ac9345",
+            "name": "Get Accounts Account Number Funds",
+            "url": "https:\/\/api.abnamro.com\/v1\/accounts\/{accountNumber}\/funds",
+            "description": "Verifies if the amount specified in the request is available on the account at that time, including any creditline.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accountNumber",
+                    "description": "IBAN of the account to be retrieve transactions on.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "amount",
+                    "description": "Amount, decimal always a positive number and no more than 3 decimals (fractional digits).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "currency",
+                    "description": "Currency of the amount, 3 characters alphabetic, ISO-4217 currency code (EUR or USD).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "636c73f3f05fd3a49d99280a1971a96e",
+            "rawModeData": ""
+        },
+        {
+            "id": "7cb4c86a92def892611ccf3360cb8032",
+            "name": "Get Consentinfo",
+            "url": "https:\/\/api.abnamro.com\/v1\/consentinfo",
+            "description": "Describes the type of authorization an access token provides on a resource. The information returned contains information about the granted scopes, account number, or transaction ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "636c73f3f05fd3a49d99280a1971a96e",
+            "rawModeData": ""
+        }
+    ]
+}
