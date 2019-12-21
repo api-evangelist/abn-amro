@@ -30,23 +30,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/fxtradev1.json"
-                },
-                {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/fxtradev1-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/fxtradev1-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/fxtradev1-postman-collection.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/fxtradev1-postman-collection.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/fxtradev1-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/fxtradev1-postman-collection.json"
                 }
             ]
         },
@@ -60,23 +48,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/tikkiev1portal.json"
-                },
-                {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiev1portal-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/tikkiev1portal-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiev1portal-postman-collection.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiev1portal-postman-collection.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiev1portal-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/tikkiev1portal-postman-collection.json"
                 }
             ]
         },
@@ -90,11 +66,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/account-information-psd2-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/account-information-psd2-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/account-information-psd2-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/account-information-psd2-postman-collection.json"
                 }
             ]
         },
@@ -108,11 +84,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/business-account-insight-api-closed-beta-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/business-account-insight-api-closed-beta-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/business-account-insight-api-closed-beta-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/business-account-insight-api-closed-beta-postman-collection.json"
                 }
             ]
         },
@@ -126,11 +102,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/payment-initiation-psd2-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/payment-initiation-psd2-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/payment-initiation-psd2-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/payment-initiation-psd2-postman-collection.json"
                 }
             ]
         },
@@ -144,11 +120,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkie-fast-checkout-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/tikkie-fast-checkout-api-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkie-fast-checkout-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/tikkie-fast-checkout-api-postman-collection.json"
                 }
             ]
         }
