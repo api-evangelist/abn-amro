@@ -1,5 +1,5 @@
 {
-    "id": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+    "id": "538b1d1a9010d23ef2c18683194200f9",
     "name": "fxtrade-v1",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "e96a53dfff8ec394f7878af20a816f57",
+            "id": "1fdf5e2945ab6feaf15075ce49a45154",
             "name": "Get Access Token",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/token.oauth2",
             "description": "To invoke an API you must obtain an access token. The token obtained, together with the API key that you obtained from the developer portal during onboarding for sandbox, is required for every call to the FX Trade API.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "c321132f5dfae2c52b48b07d0f012d14",
+            "id": "48f0db99411ef377c056ce0188d410c1",
             "name": "Get Allowed Currency Pairs",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/allowedcurrencypairs",
             "description": "Returns the currency pairs for which a spot or outright rate, quote, and order can be requested.",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "295201ee09e8cb3eb78687ff13f7445d",
+            "id": "1d21caf2e396fb3fe734076e3b501564",
             "name": "Get Settlement Account Groups",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/settlementaccountgroups",
             "description": "Returns the settlement account group identifiers that are used to control the settlement of an amount for the FX spot, or outright trade, on the payment accounts at settlement date.",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "1edb5c637af0ac2aad3fb9383f16d1c7",
+            "id": "e8688607b2913adc1d03c44fe0251835",
             "name": "Get Indicative Rate",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/rates\/EURUSD",
             "description": "Returns the FX rate for the currency pair you specified.",
@@ -98,11 +98,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "1eb194f7fcd3056b6f9686056f287248",
+            "id": "f2ef0cc2c0586a6340a31b68db11314b",
             "name": "Get Indicative Rates",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/rates",
             "description": "Returns the FX rates for the currency pairs you specified.",
@@ -136,11 +136,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "f99c8aea6b4a865b6ca6c5bccc83b8ee",
+            "id": "bccbdff162f34cdc7a253e25d33c4ae7",
             "name": "Post Quote",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/quotes",
             "description": "Submits a request for quote for an FX outright.",
@@ -159,11 +159,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "f186da1c427bb6471367c11d082bab88",
+            "id": "bb0379013118f5e555b3ee2312af2c1e",
             "name": "Get Quotes",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/quotes",
             "description": "Returns the FX Quotes that were requested earlier.",
@@ -197,11 +197,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "26936e000986ddd2ea2282093d4022f6",
+            "id": "c451a724e1f27c180921ff2abc818f67",
             "name": "Post Order",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/orders",
             "description": "Submits an order for an FX outright based upon a quote that has been obtained by the previous request for quote.",
@@ -220,11 +220,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "98afca561f22c21db87712cdf7fdaede",
+            "id": "899668fa3f13b09d0ca89beaf07c074c",
             "name": "Get Orders",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/orders",
             "description": "Returns the FX Orders that were requested earlier.",
@@ -258,11 +258,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "d94dbd412e4fbb7ac7140a7c683836a1",
+            "id": "ef3d960695c6b85eb59287981ec36529",
             "name": "Get Quote",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/quotes\/{quoteId}",
             "description": "Returns the FX Quote that was requested earlier.",
@@ -289,11 +289,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         },
         {
-            "id": "7f0da91e9c61182046b8b824e45ffdc6",
+            "id": "4fc6883c6192566c28a15548888f7dca",
             "name": "Get Order",
             "url": "https:\/\/api-sandbox.abnamro.com\/v1\/fxtrade\/orders\/{orderId}",
             "description": "Returns the FX Order that was requested earlier.",
@@ -320,7 +320,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "bb562b5cbbf2ec23ce85c2cb49de1ce2",
+            "collectionId": "538b1d1a9010d23ef2c18683194200f9",
             "rawModeData": ""
         }
     ]
