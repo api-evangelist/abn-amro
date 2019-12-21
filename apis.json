@@ -35,6 +35,10 @@
                 {
                     "type": "x-postman-collecction",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/fxtradev1-postman-collection.json"
+                },
+                {
+                    "type": "x-openapi-source",
+                    "url": "https:\/\/developer.abnamro.com\/sites\/default\/files\/model_source\/fx-trade-v1-rev1.yaml"
                 }
             ]
         },
@@ -49,6 +53,10 @@
                 {
                     "type": "x-openapi",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/tikkiev1portal-openapi.json"
+                },
+                {
+                    "type": "x-openapi-source",
+                    "url": "https:\/\/developer.abnamro.com\/sites\/default\/files\/model_source\/tikkie-v1-rev2.yaml"
                 },
                 {
                     "type": "x-postman-collecction",
@@ -71,6 +79,10 @@
                 {
                     "type": "x-postman-collecction",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/account-information-psd2-postman-collection.json"
+                },
+                {
+                    "type": "x-openapi-source",
+                    "url": "https:\/\/developer.abnamro.com\/sites\/default\/files\/model_source\/account-information-v1-rev3.yaml"
                 }
             ]
         },
@@ -85,6 +97,10 @@
                 {
                     "type": "x-openapi",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/business-account-insight-api-closed-beta-openapi.json"
+                },
+                {
+                    "type": "x-openapi-source",
+                    "url": "https:\/\/developer.abnamro.com\/sites\/default\/files\/model_source\/business-account-insight-v1-beta-rev1.yaml"
                 },
                 {
                     "type": "x-postman-collecction",
@@ -105,7 +121,11 @@
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/payment-initiation-psd2-openapi.json"
                 },
                 {
-                    "type": "x-postman-collecction",
+                    "type": "x-openapi-source",
+                    "url": "https:\/\/developer.abnamro.com\/sites\/default\/files\/model_source\/payment-initiation-v1-rev3.yaml"
+                },
+                {
+                    "type": "x-postman-collection",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/payment-initiation-psd2-postman-collection.json"
                 }
             ]
@@ -121,6 +141,10 @@
                 {
                     "type": "x-openapi",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/tikkie-fast-checkout-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi-source",
+                    "url": "https:\/\/developer.abnamro.com\/sites\/default\/files\/model_source\/tikkie-fastcheckout-v1-rev4.yaml"
                 },
                 {
                     "type": "x-postman-collecction",
