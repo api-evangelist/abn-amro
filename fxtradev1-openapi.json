@@ -2,9 +2,9 @@
     "openapi": "3.0.0",
     "info": {
         "version": "1.0",
-        "title": "fxtrade-v1",
-        "description": "This Postman collection contains the examples as used in the tutorial section.",
-        "termsOfService": "http:\/\/exmple.com\/license\/"
+        "title": "FX Trade",
+        "description": "Receive real-time foreign exchange rates and initiate currency conversions.",
+        "termsOfService": ""
     },
     "servers": [
         "https:\/\/auth-sandbox.connect.abnamro.com\/as",
