@@ -2,8 +2,8 @@
     "openapi": "3.0.0",
     "info": {
         "version": "1.0",
-        "title": "tikkie-v1-portal",
-        "description": "TODO: Add Description",
+        "title": "Tikkie Payment Request",
+        "description": "Get paid faster by creating and sharing payment requests.",
         "termsOfService": "http:\/\/exmple.com\/license\/"
     },
     "servers": [
