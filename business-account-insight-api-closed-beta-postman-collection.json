@@ -1,5 +1,5 @@
 {
-    "id": "f163c569acb596279a6c7df806d6ac4a",
+    "id": "ba9701ef5f107bfc817c96de61086449",
     "name": "Business Account Insight API closed beta",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "77a8354712f57ee758d7b1ae36165a0f",
+            "id": "b97bb042364c14b39a8ef589814c50a1",
             "name": "Get Accounts Account Number Transactions",
             "url": "https:\/\/api.abnamro.com\/v1\/accounts\/{accountNumber}\/transactions",
             "description": "Retrieve a list of transactions for a specific account number. A maximum of 50 transactions are returned.",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f163c569acb596279a6c7df806d6ac4a",
+            "collectionId": "ba9701ef5f107bfc817c96de61086449",
             "rawModeData": ""
         },
         {
-            "id": "5247cdd71a4c5f0fd2a26493f5c04439",
+            "id": "d54cd8e905eb180d9dc00937f92ef9ab",
             "name": "Get Accounts Account Number Balances",
             "url": "https:\/\/api.abnamro.com\/v1\/accounts\/{accountNumber}\/balances",
             "description": "Retrieves the details of the account, such as the book balance of the account, and currency.",
@@ -89,11 +89,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f163c569acb596279a6c7df806d6ac4a",
+            "collectionId": "ba9701ef5f107bfc817c96de61086449",
             "rawModeData": ""
         },
         {
-            "id": "4f5c4d502e7c3b94c2933ac3c99d1091",
+            "id": "df4ed798c5f5bbe44bd87a3d38de2fe0",
             "name": "Get Accounts Account Number Details",
             "url": "https:\/\/api.abnamro.com\/v1\/accounts\/{accountNumber}\/details",
             "description": "Retrieve the details of the account, such as currency and account holder name.",
@@ -120,11 +120,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f163c569acb596279a6c7df806d6ac4a",
+            "collectionId": "ba9701ef5f107bfc817c96de61086449",
             "rawModeData": ""
         },
         {
-            "id": "4382c6a03197c78350f78e73573c59b1",
+            "id": "8aabfa0e12ef44988bc144a5c061a82e",
             "name": "Get Accounts Account Number Funds",
             "url": "https:\/\/api.abnamro.com\/v1\/accounts\/{accountNumber}\/funds",
             "description": "Verifies if the amount specified in the request is available on the account at that time, including any creditline.",
@@ -165,11 +165,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f163c569acb596279a6c7df806d6ac4a",
+            "collectionId": "ba9701ef5f107bfc817c96de61086449",
             "rawModeData": ""
         },
         {
-            "id": "4937339774b68012c66817862d553ee6",
+            "id": "1e1ec8fc6a741768849b0d0479244ebf",
             "name": "Get Consentinfo",
             "url": "https:\/\/api.abnamro.com\/v1\/consentinfo",
             "description": "Describes the type of authorization an access token provides on a resource. The information returned contains information about the granted scopes, account number, or transaction ID.",
@@ -188,7 +188,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f163c569acb596279a6c7df806d6ac4a",
+            "collectionId": "ba9701ef5f107bfc817c96de61086449",
             "rawModeData": ""
         }
     ]
