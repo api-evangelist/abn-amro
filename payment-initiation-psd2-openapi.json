@@ -1,0 +1,393 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.1.1",
+        "title": "Payment Initiation (PSD2)",
+        "description": "The Payment Initiation API is used to send a payment orders and check their processing status. The API can be used by licensed third party service providers to access ABN AMRO accounts. An account can only be accessed when ABN AMRO's account holder authorizes this through the consent application.\n**New in version 1.1.1:**\n- Added Content-Length header for PUT method\n- Textual improvements\n- Added delete method for standing payment orders\n- Added X-Request-ID Header Support\n- Improved error messages",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "https:\/\/api-sandbox.abnamro.com\/v1",
+        "https:\/\/api.abnamro.com\/v1"
+    ],
+    "paths": {
+        "\/payments": {
+            "post": {
+                "summary": "",
+                "description": "This operation will register a SEPA payment at the bank for further authorization by the account holder through the consent application. For information see authorization and tutorial sections on developer portal. The access token from this consent can be used in PUT payments to execute the registered payment.",
+                "operationId": "PostSEPAPayment",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "**successful operation \/ created**"
+                    }
+                }
+            }
+        },
+        "\/payments\/{transactionId}": {
+            "put": {
+                "summary": "",
+                "description": "This operation will release a registered SEPA payment at the bank for further processing. Authorization by the account holder is needed through the consent application to obtain a access token.",
+                "operationId": "PutSEPAPayment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "description": "Transaction ID (returned in response from POST) of payment which needs to be released for further processing with the bank."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation."
+                    }
+                }
+            },
+            "delete": {
+                "summary": "",
+                "description": "This operation will cancel a payment dated in the future that has status 'SCHEDULED'. If the future date has passed, the payment can no longer be cancelled.",
+                "operationId": "DeleteSEPAPayment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "description": "Transaction ID (returned in response from POST) of payment which needs to be released for further processing with the bank."
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Successful operation, no content in response."
+                    }
+                }
+            },
+            "get": {
+                "summary": "",
+                "description": "This operation will retrieve the current status of a payment.",
+                "operationId": "GetSEPAPayment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "description": "Transaction ID (returned in response from POST) of payment which needs to be released for further processing with the bank."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation."
+                    }
+                }
+            }
+        },
+        "\/payments\/xborder": {
+            "post": {
+                "summary": "",
+                "description": "This operation will register a non-SEPA payment at the bank for\nfurther authorization by the account holder through the consent application.\nThe access token from the consent can be used in PUT payments to execute the\nregistered payment. These type of payments are subject to SWIFT characterset\nlimitations and possible truncation of fields.",
+                "operationId": "PostXborderPayment",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "**successful operation \/ created**"
+                    }
+                }
+            }
+        },
+        "\/payments\/xborder\/{transactionId}": {
+            "put": {
+                "summary": "",
+                "description": "This operation will release a registered non-SEPA\npayment at the bank for further processing. Authorization by the account holder\nis needed through consent to obtain a access token. The TransactionId is received\nas response to POST Payments.",
+                "operationId": "PutXborderPayment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "description": "Transaction ID (returned in response from POST) of payment which needs to be released for further processing with the bank."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation."
+                    }
+                }
+            }
+        },
+        "\/payments\/standingorder": {
+            "post": {
+                "summary": "",
+                "description": "This operation will register a periodic SEPA payment at the bank for further authorization by the account holder through the consent application. For more information, see Authorization and Tutorial sections on developer portal. The access token from the consent can be used in the PUT method to execute the registered standing order.",
+                "operationId": "PostStandingOrderPayment",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "**successful operation \/ created**"
+                    }
+                }
+            }
+        },
+        "\/payments\/standingorder\/{transactionId}": {
+            "put": {
+                "summary": "",
+                "description": "This operation releases a registered standing order at the bank for further processing. Authorization by the account holder is required through consent to obtain a access token.",
+                "operationId": "PutStandingOrderPayment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "description": "Transaction ID (returned in response from POST) of payment which needs to be released for further processing with the bank."
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "**successful operation \/ created**"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "",
+                "description": "This operation deactivates a standing order. Use the transactionId as parameter to identify the standing order which is to be deactivated. The transactionId is in the response after a succesful registration of a new standing order. The transactionId and the standing order details are kept in the SDO API database.",
+                "operationId": "DeleteStandingOrderPayment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "description": "Transaction ID (returned in response from POST) of payment which needs to be released for further processing with the bank."
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Successful operation, no content in response."
+                    }
+                }
+            }
+        },
+        "\/payments\/batch": {
+            "post": {
+                "summary": "",
+                "description": "This operation will post a batch payment for further authorization by a commercial account holder in Internet Banking or Access Online. The batch payment can be sent in as SCT (PAIN.001.001.03) or SDD (pain.008.001.02) XML file. For more information see [ABN AMRO SEPA implementation guidelines](https:\/\/www.abnamro.nl\/en\/commercialbanking\/products\/payments\/sepa\/downloads.html). \nWhen delivering payment towards ABN AMRO through this API, the payment must be compressed first using GZIP format. The ",
+                "operationId": "PostBatchPayment",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "**successful operation \/ created**"
+                    }
+                }
+            }
+        },
+        "\/consentinfo": {
+            "get": {
+                "summary": "",
+                "description": "This operation provides information regarding the authorization to a resource of an access token. The access token represents the consent granted by the account holder or resource owner to an account or resource. The information returned contains information about the granted scopes, selected account number and transaction ID.",
+                "operationId": "GetConsentInformation",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "SepaPayment": {
+                "type": "object",
+                "properties": {
+                    "initiatingpartyAccountNumber": {
+                        "description": "The account number in IBAN format of the ordering party, initiating the transaction, if omitted the account number will be selected during the authorization of the payment. If the account cannot be authorized, the account holder can select a different account.",
+                        "type": "string"
+                    },
+                    "counterpartyAccountNumber": {
+                        "description": "The account number in IBAN format of the counterparty.",
+                        "type": "string"
+                    },
+                    "counterpartyName": {
+                        "description": "The name of the counterparty.",
+                        "type": "string"
+                    },
+                    "amount": {
+                        "description": "The amount of the transaction which is always positive. The maximum amount is equal to that set for the online banking channel Access Online or Internet Banking.",
+                        "type": "number"
+                    },
+                    "requestedExecutionDate": {
+                        "description": "An optional date on which the payment is to be executed. This date should be no more than 364 days after the current date. If the execution date is in the past, or if the requested execution date is empty, then the payment will be executed immediately.  The format of the date is a ISO8601 full-date conforming to RFC 3339, (CCYY-MM-DD). If there is no clearing of payments on the execution date the payment will be processed on the first available bookdate.",
+                        "type": "string"
+                    },
+                    "currency": {
+                        "description": "The currency of the transaction, in EUR only. If omitted\nEUR is assumed.",
+                        "type": "string"
+                    },
+                    "remittanceInfo": {
+                        "description": "Information for the beneficiary about the payment. This type of information is 'unstructured'. A maximum of 140 characters is allowed",
+                        "type": "string"
+                    },
+                    "structuredRemittanceInfo": {
+                        "description": "A group identifying structured remittance information. Either unstructured remittanceInfo can be used or structuredRemittanceInfo.",
+                        "type": "object"
+                    }
+                }
+            },
+            "structuredRemittanceInfo": {
+                "type": "object"
+            },
+            "TransactionStatusResponse": {
+                "type": "object",
+                "properties": {
+                    "accountNumber": {
+                        "description": "The accountnumber in IBAN format of the registered transaction.",
+                        "type": "string"
+                    },
+                    "transactionId": {
+                        "description": "Unique Transaction ID also known as accountServicerReference.",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the transaction.",
+                        "type": "string"
+                    }
+                }
+            },
+            "XBorderPayment": {
+                "type": "object",
+                "properties": {
+                    "initiatingParty": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "counterParty": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "amount": {
+                        "description": "The amount of the transaction which is always positive. The maximum amount is equal to that set for the online banking channel Access Online or Internet Banking.",
+                        "type": "number"
+                    },
+                    "currency": {
+                        "description": "The currency of the transaction, in EUR only. If omitted\nEUR is assumed.",
+                        "type": "string"
+                    },
+                    "chargesBearer": {
+                        "description": "Indicates who pays the charges related to the payment BEN = beneficiary, OUR = initiating party, SHA both parties share the charges. If not specified, SHA is assumed. Always use SHA in EEA.",
+                        "type": "string"
+                    },
+                    "requestedExecutionDate": {
+                        "description": "An optional date on which the payment is to be executed. This date should be no more than 364 days after the current date. If the execution date is in the past, or if the requested execution date is empty, then the payment will be executed immediately.  The format of the date is a ISO8601 full-date conforming to RFC 3339, (CCYY-MM-DD). If there is no clearing of payments on the execution date the payment will be processed on the first available bookdate.",
+                        "type": "string"
+                    },
+                    "remittanceInfo": {
+                        "description": "Information for the beneficiary about the payment. This type of information is 'unstructured'. A maximum of 140 characters is allowed",
+                        "type": "string"
+                    }
+                }
+            },
+            "initiatingParty": {
+                "type": "object"
+            },
+            "counterParty": {
+                "type": "object"
+            },
+            "StandingOrder": {
+                "type": "object",
+                "properties": {
+                    "startDate": {
+                        "description": "Start date of the standing order (Format: yyyy-mm-dd). Must be today or future date (max 30 days in future).",
+                        "type": "string"
+                    },
+                    "endDate": {
+                        "description": "Optional end date of the standing order in the format: yyyy-mm-dd. If left blanc the end date is indefinite.",
+                        "type": "string"
+                    },
+                    "executionRule": {
+                        "description": "This data attribute defines the behavior when recurring payment dates falls on a weekend or bank holiday.  The field (not case sensitive) is accepted for input, but not used.",
+                        "type": "string"
+                    },
+                    "frequency": {
+                        "description": "The frequency with which the standing order is executed. The 'EventFrequencyCode' of ISO 20022 is supported.",
+                        "type": "string"
+                    },
+                    "dayOfExecution": {
+                        "description": "Day of execution as string. This string consists always of two characters. The field is accepted for input, but not used.",
+                        "type": "string"
+                    },
+                    "payment": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "payment": {
+                "type": "object"
+            },
+            "StandingOrderResponse": {
+                "type": "object",
+                "properties": {
+                    "transactionId": {
+                        "description": "Unique Transaction ID also known as accountServicerReference.",
+                        "type": "string"
+                    },
+                    "accountNumber": {
+                        "description": "The accountnumber in IBAN format of the registered transaction.",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the transaction.",
+                        "type": "string"
+                    }
+                }
+            },
+            "Batch": {
+                "type": "object",
+                "properties": {
+                    "sepaBatchPaymentInstruction": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "sepaBatchPaymentInstruction": {
+                "type": "object"
+            },
+            "consentInfoResponse": {
+                "type": "object",
+                "properties": {
+                    "scopes": {
+                        "description": "The scopes associated with the access token. This can be any scope from securitySchemes.",
+                        "type": "string"
+                    },
+                    "iban": {
+                        "description": "The IBAN or account number associated with the access token.",
+                        "type": "string"
+                    },
+                    "transactionId": {
+                        "description": "Unique Transaction ID also known as accountServicerReference.",
+                        "type": "string"
+                    },
+                    "valid": {
+                        "description": "Time that the token is valid, in Unix epoch format.",
+                        "type": "string"
+                    }
+                }
+            },
+            "Errors": {
+                "type": "object",
+                "properties": {
+                    "errors": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "errors": {
+                "type": "array"
+            }
+        }
+    }
+}
