@@ -1,0 +1,90 @@
+{
+    "id": "10ad23c19316a013641ee56cf562849c",
+    "name": "Tikkie Fast Checkout API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "19cc429325a952d4db4c8c1bd44c92fb",
+            "name": "On sandbox only - Create a test merchant to work with on sandbox.",
+            "url": "http:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/fastcheckout\/merchant",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "10ad23c19316a013641ee56cf562849c",
+            "rawModeData": ""
+        },
+        {
+            "id": "34c1e4551b1ac75f541b9fb051fe5e45",
+            "name": "Creates an order that represents the items in your customer's shopping cart.",
+            "url": "http:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/fastcheckout\/orders",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "10ad23c19316a013641ee56cf562849c",
+            "rawModeData": ""
+        },
+        {
+            "id": "24b8b822a9b939817445f274224610a4",
+            "name": "Fetches the details of an order and displays its status.",
+            "url": "http:\/\/api-sandbox.abnamro.com\/v1\/tikkie\/fastcheckout\/orders\/{orderToken}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orderToken",
+                    "description": "Order Token required to fetch the details of a particular order.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "10ad23c19316a013641ee56cf562849c",
+            "rawModeData": ""
+        }
+    ]
+}
