@@ -9,17 +9,19 @@
         "financial services",
         "have api",
         "have openapi",
+        "have swagger",
+        "new",
         "postman",
         "profile",
         "uk banks"
     ],
-    "created": "2019-12-18",
-    "modified": "2019-12-18",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/abn-amro\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
         {
-            "name": "fxtrade-v1",
+            "name": "FX Trade",
             "description": null,
             "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/abn-amro-bank-nv.gif",
             "humanURL": "https:\/\/www.abnamro.com",
@@ -41,11 +43,15 @@
                 {
                     "type": "x-postman-collecction",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/fxtradev1-postman-collection.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/fxtradev1-postman-collection.json"
                 }
             ]
         },
         {
-            "name": "tikkie-v1-portal",
+            "name": "Tikkie Payment Request",
             "description": null,
             "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/abn-amro-bank-nv.gif",
             "humanURL": "https:\/\/www.abnamro.com",
@@ -67,11 +73,15 @@
                 {
                     "type": "x-postman-collecction",
                     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiev1portal-postman-collection.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiev1portal-postman-collection.json"
                 }
             ]
         },
         {
-            "name": "tikkie-fastcheckout-v1",
+            "name": "Account Information (PSD2)",
             "description": null,
             "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/abn-amro-bank-nv.gif",
             "humanURL": "https:\/\/www.abnamro.com",
@@ -80,24 +90,16 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/tikkiefastcheckoutv1.json"
-                },
-                {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiefastcheckoutv1-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/account-information-psd2-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiefastcheckoutv1-postman-collection.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkiefastcheckoutv1-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/account-information-psd2-postman-collection.json"
                 }
             ]
         },
         {
-            "name": "ABN AMRO",
+            "name": "Business Account Insight API",
             "description": null,
             "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/abn-amro-bank-nv.gif",
             "humanURL": "https:\/\/www.abnamro.com",
@@ -106,29 +108,57 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/abn-amro.json"
-                },
-                {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/abn-amro-openapi.json"
-                },
-                {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/business-account-insight-api-closed-beta-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/abn-amro-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/business-account-insight-api-closed-beta-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Payment Initiation (PSD2)",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/abn-amro-bank-nv.gif",
+            "humanURL": "https:\/\/www.abnamro.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/payment-initiation-psd2-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/abn-amro-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/payment-initiation-psd2-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Tikkie Fast Checkout API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/abn-amro-bank-nv.gif",
+            "humanURL": "https:\/\/www.abnamro.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkie-fast-checkout-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/tikkie-fast-checkout-api-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "About",
             "url": "https:\/\/www.abnamro.com\/en\/about-abnamro\/index.html"
@@ -168,6 +198,10 @@
         {
             "type": "News",
             "url": "https:\/\/www.abnamro.com\/en\/newsroom\/newsarticles\/index.html"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28104-2019-12-20-19-21-11.json"
         },
         {
             "type": "Privacy Policy",
