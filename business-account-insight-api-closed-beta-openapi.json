@@ -1,0 +1,250 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0-beta",
+        "title": "Business Account Insight API",
+        "description": "Business Account Insight API is used to retrieve account information for commercial clients.",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "https:\/\/api-sandbox.abnamro.com\/v1",
+        "https:\/\/api.abnamro.com\/v1"
+    ],
+    "paths": {
+        "\/accounts\/{accountNumber}\/transactions": {
+            "get": {
+                "summary": "Get Accounts Account Number Transactions",
+                "description": "Retrieve a list of transactions for a specific account number. A maximum of 50 transactions are returned.",
+                "operationId": "GetAccountsAccountNumberTransactions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accountNumber",
+                        "in": "path",
+                        "description": "IBAN of the account to be retrieve transactions on."
+                    },
+                    {
+                        "name": "bookDateFrom",
+                        "in": "query",
+                        "description": "Retrieves transactions that are most recent than this date only (format: yyyy-mm-dd). If a field or date is ommitted, the last 50 transactions are retrieved. Transactions history can be retrieved up to 18 months from the current date."
+                    },
+                    {
+                        "name": "bookDateTo",
+                        "in": "query",
+                        "description": "Retrieves transactions preceding this date (format: yyyy-mm-dd)."
+                    },
+                    {
+                        "name": "nextPageKey",
+                        "in": "query",
+                        "description": "Reference key of the last retrieved transaction. This can be used as a query parameter in the next call to fetch the next set of transactions. This key is only provided if more than 50 transactions are present."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "**successful operation**"
+                    }
+                }
+            }
+        },
+        "\/accounts\/{accountNumber}\/balances": {
+            "get": {
+                "summary": "Get Accounts Account Number Balances",
+                "description": "Retrieves the details of the account, such as the book balance of the account, and currency.",
+                "operationId": "GetAccountsAccountNumberBalances",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accountNumber",
+                        "in": "path",
+                        "description": "IBAN of the account to be retrieve transactions on."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "**successful operation**"
+                    }
+                }
+            }
+        },
+        "\/accounts\/{accountNumber}\/details": {
+            "get": {
+                "summary": "Get Accounts Account Number Details",
+                "description": "Retrieve the details of the account, such as currency and account holder name.",
+                "operationId": "GetAccountsAccountNumberDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accountNumber",
+                        "in": "path",
+                        "description": "IBAN of the account to be retrieve transactions on."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "**successful operation**"
+                    }
+                }
+            }
+        },
+        "\/accounts\/{accountNumber}\/funds": {
+            "get": {
+                "summary": "Get Accounts Account Number Funds",
+                "description": "Verifies if the amount specified in the request is available on the account at that time, including any creditline.",
+                "operationId": "GetAccountsAccountNumberFunds",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accountNumber",
+                        "in": "path",
+                        "description": "IBAN of the account to be retrieve transactions on."
+                    },
+                    {
+                        "name": "amount",
+                        "in": "query",
+                        "description": "Amount, decimal always a positive number and no more than 3 decimals (fractional digits)."
+                    },
+                    {
+                        "name": "currency",
+                        "in": "query",
+                        "description": "Currency of the amount, 3 characters alphabetic, ISO-4217 currency code (EUR or USD)."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "**successful operation**"
+                    }
+                }
+            }
+        },
+        "\/consentinfo": {
+            "get": {
+                "summary": "Get Consentinfo",
+                "description": "Describes the type of authorization an access token provides on a resource. The information returned contains information about the granted scopes, account number, or transaction ID.",
+                "operationId": "GetConsentinfo",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "**successful operation**"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "transactionResponse": {
+                "type": "object",
+                "properties": {
+                    "accountNumber": {
+                        "description": "IBAN of the account for which transactions are to be retrieved.",
+                        "type": "string"
+                    },
+                    "nextPageKey": {
+                        "description": "Reference key of the last retrieved transaction. This can be used as query parameter in the next call to fetch the next set of transactions. This value is null when no more transactions are present.",
+                        "type": "string"
+                    },
+                    "transactions": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "transactions": {
+                "type": "array"
+            },
+            "balanceResponse": {
+                "type": "object",
+                "properties": {
+                    "accountNumber": {
+                        "description": "IBAN of the account for which transactions are to be retrieved.",
+                        "type": "string"
+                    },
+                    "balanceType": {
+                        "description": "Indicates the type of balance retrieved.",
+                        "type": "string"
+                    },
+                    "amount": {
+                        "description": "Amount including minus -9999999.99, unformatted. Negative in the case of a debit balance.",
+                        "type": "number"
+                    },
+                    "currency": {
+                        "description": "Currency of the mutation, 3 characters alphabetic, ISO currency code (EUR or USD) as per ISO 4217.",
+                        "type": "string"
+                    }
+                }
+            },
+            "detailsResponse": {
+                "type": "object",
+                "properties": {
+                    "accountNumber": {
+                        "description": "IBAN of the account for which transactions are to be retrieved.",
+                        "type": "string"
+                    },
+                    "currency": {
+                        "description": "Currency of the mutation, 3 characters alphabetic, ISO currency code (EUR or USD) as per ISO 4217.",
+                        "type": "string"
+                    },
+                    "AccountHolderName": {
+                        "description": "Account owners name.",
+                        "type": "string"
+                    }
+                }
+            },
+            "consentInfoResponse": {
+                "type": "object",
+                "properties": {
+                    "scopes": {
+                        "description": "Scopes associated with the access token.",
+                        "type": "string"
+                    },
+                    "iban": {
+                        "description": "IBAN\/account number associated with the access token.",
+                        "type": "string"
+                    },
+                    "transactionId": {
+                        "description": "Transaction identification number associated with the access token for registered payments. This is \"null\" when an access token is not for payment",
+                        "type": "string"
+                    },
+                    "valid": {
+                        "description": "Time that the token is valid in Unix epoch format.",
+                        "type": "string"
+                    }
+                }
+            },
+            "fundsResponse": {
+                "type": "object",
+                "properties": {
+                    "accountNumber": {
+                        "description": "IBAN of the account for which transactions are to be retrieved.",
+                        "type": "string"
+                    },
+                    "amount": {
+                        "description": "Amount of the funds.",
+                        "type": "integer"
+                    },
+                    "currency": {
+                        "description": "Currency of the mutation, 3 characters alphabetic, ISO currency code (EUR or USD) as per ISO 4217.",
+                        "type": "string"
+                    },
+                    "available": {
+                        "description": "Response if the amount is available. Possible values are 'true' or 'false'.",
+                        "type": "boolean"
+                    }
+                }
+            },
+            "Errors": {
+                "type": "object",
+                "properties": {
+                    "errors": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "errors": {
+                "type": "array"
+            }
+        }
+    }
+}
