@@ -1,5 +1,5 @@
 {
-    "id": "39bf5cb8f6b6d3ae89300b084780ea4a",
+    "id": "cde61c07ecede8b368602d6003a21489",
     "name": "Payment Initiation (PSD2)",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b39e4ba86ecd0246c288a993107fb76c",
+            "id": "160385f3489508c81071aaa2b3112023",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments",
             "description": "This operation will register a SEPA payment at the bank for further authorization by the account holder through the consent application. For information see authorization and tutorial sections on developer portal. The access token from this consent can be used in PUT payments to execute the registered payment.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "300d0875f8a8c3cb5c07f02bc5958dfd",
+            "id": "31e113506b5d7fc976b3d66c689272d5",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments\/{transactionId}",
             "description": "This operation will release a registered SEPA payment at the bank for further processing. Authorization by the account holder is needed through the consent application to obtain a access token.",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "35b54f1da0b3e19baa6f7f5e960a2521",
+            "id": "a6f90a2618d76432801f8057f7ebbbf3",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments\/{transactionId}",
             "description": "This operation will cancel a payment dated in the future that has status 'SCHEDULED'. If the future date has passed, the payment can no longer be cancelled.",
@@ -91,11 +91,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "99bd810367dbb4d81c82b63e39a40f5d",
+            "id": "91ce66205c4b457e1491ad86c9ab2ec9",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments\/{transactionId}",
             "description": "This operation will retrieve the current status of a payment.",
@@ -122,11 +122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "83ce0d9330e52c5b36937a672f3031f3",
+            "id": "3f092294478019d60610a4ee75311d74",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments\/xborder",
             "description": "This operation will register a non-SEPA payment at the bank for\nfurther authorization by the account holder through the consent application.\nThe access token from the consent can be used in PUT payments to execute the\nregistered payment. These type of payments are subject to SWIFT characterset\nlimitations and possible truncation of fields.",
@@ -145,11 +145,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "a24bcf1e49ed73e7c56398778d224cc3",
+            "id": "188f93835fa561a8dff48a84fcda31ff",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments\/xborder\/{transactionId}",
             "description": "This operation will release a registered non-SEPA\npayment at the bank for further processing. Authorization by the account holder\nis needed through consent to obtain a access token. The TransactionId is received\nas response to POST Payments.",
@@ -176,11 +176,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "18e1f1bd9de612813f00fda71a8c00d3",
+            "id": "3e325cdcfd08879c75e0d40b1b31b5c7",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments\/standingorder",
             "description": "This operation will register a periodic SEPA payment at the bank for further authorization by the account holder through the consent application. For more information, see Authorization and Tutorial sections on developer portal. The access token from the consent can be used in the PUT method to execute the registered standing order.",
@@ -199,11 +199,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "28ba962a87069bc6bc1d1a299d9ae977",
+            "id": "08f265bc7bbbbfe7f4282d2c39225b00",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments\/standingorder\/{transactionId}",
             "description": "This operation releases a registered standing order at the bank for further processing. Authorization by the account holder is required through consent to obtain a access token.",
@@ -230,11 +230,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "3926676393b040ca1d5c006696e530db",
+            "id": "1812e5757cab18ba781479274694ada1",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments\/standingorder\/{transactionId}",
             "description": "This operation deactivates a standing order. Use the transactionId as parameter to identify the standing order which is to be deactivated. The transactionId is in the response after a succesful registration of a new standing order. The transactionId and the standing order details are kept in the SDO API database.",
@@ -261,11 +261,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "289fc936afac7a3f8955678df54d7195",
+            "id": "13b12bd65e45b3b030619b6b89d94e66",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/payments\/batch",
             "description": "This operation will post a batch payment for further authorization by a commercial account holder in Internet Banking or Access Online. The batch payment can be sent in as SCT (PAIN.001.001.03) or SDD (pain.008.001.02) XML file. For more information see [ABN AMRO SEPA implementation guidelines](https:\/\/www.abnamro.nl\/en\/commercialbanking\/products\/payments\/sepa\/downloads.html). \nWhen delivering payment towards ABN AMRO through this API, the payment must be compressed first using GZIP format. The ",
@@ -284,11 +284,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         },
         {
-            "id": "5cc6c94b089573611965f486017289ee",
+            "id": "a9b2f73f1d72e700225ac3dfde43c88e",
             "name": "",
             "url": "https:\/\/api.abnamro.com\/v1\/consentinfo",
             "description": "This operation provides information regarding the authorization to a resource of an access token. The access token represents the consent granted by the account holder or resource owner to an account or resource. The information returned contains information about the granted scopes, selected account number and transaction ID.",
@@ -307,7 +307,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "39bf5cb8f6b6d3ae89300b084780ea4a",
+            "collectionId": "cde61c07ecede8b368602d6003a21489",
             "rawModeData": ""
         }
     ]
