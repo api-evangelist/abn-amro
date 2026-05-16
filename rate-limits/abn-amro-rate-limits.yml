@@ -1,0 +1,37 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: ABN AMRO
+providerId: abn-amro
+created: '2026-05-16'
+modified: '2026-05-16'
+reconciled: false
+tags:
+  - Financial
+  - Open Banking
+  - PSD2
+  - Rate Limiting
+description: ABN AMRO's developer portal documents that APIs are protected by rate limits but does not publish exact numeric ceilings on the public landing page. PSD2 follows the Berlin Group recommendation of 4 AIS polls per day per account when no PSU is present.
+notes: Numeric ceilings on Tikkie and Business Account Payment APIs are not published on the public portal and need confirmation from product-specific reference docs.
+sources:
+  - https://developer.abnamro.com/
+  - https://developer.abnamro.com/api-products/payment-initiation-psd2/reference-documentation
+responseCodes:
+  throttled: 429
+limits:
+  - name: PSD2 AIS unattended polling
+    scope: account
+    metric: requests_per_day
+    limit: 4
+  - name: PSD2 / Tikkie / Business request throttling
+    scope: client
+    metric: requests_per_second
+    limit: not publicly published
+policies:
+  - name: Berlin Group AIS polling cap
+    description: Per Berlin Group NextGenPSD2, Account Information requests in the unattended flow are limited to four polls per account per day unless the PSU is present.
+  - name: Per-client throttling
+    description: All APIs have per-client throttling enforced at the gateway; exact ceilings are shared with onboarded clients during registration.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

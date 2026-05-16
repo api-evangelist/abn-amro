@@ -1,0 +1,79 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: ABN AMRO
+providerId: abn-amro
+created: '2026-05-16'
+modified: '2026-05-16'
+reconciled: false
+tags:
+  - Financial
+  - Banks
+  - Open Banking
+  - PSD2
+description: ABN AMRO offers a developer portal with sandbox access free of charge for PSD2 and business APIs. Production access for PSD2 requires a Dutch / EU regulatory licence and an eIDAS certificate, not a public price list. Tikkie Business and corporate-payment APIs are billed through the underlying commercial product agreement.
+notes: Pricing for production use is gated behind regulator-issued PSD2 licences and bilateral business-banking contracts; ABN AMRO does not publish per-call pricing on the developer portal. Reconcile by contacting an ABN AMRO Account Manager.
+sources:
+  - https://developer.abnamro.com/
+  - https://developer.abnamro.com/api-products/payment-initiation-psd2/overview
+plans:
+  - id: abn-amro-sandbox
+    name: Sandbox
+    type: free
+    description: Free sandbox access for all developer-portal APIs using synthetic data and test certificates.
+    entries:
+      - label: Sandbox usage
+        name: sandbox_usage
+        type: free
+        metric: requests
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+    elements:
+      - name: Tikkie sandbox
+      - name: PSD2 sandbox (PIS + AIS)
+      - name: Business Account Payment sandbox
+  - id: abn-amro-psd2-production
+    name: PSD2 Production (Regulated TPP)
+    type: enterprise
+    description: Production PSD2 access for licensed Third Party Providers. Access is granted on registration of an eIDAS QWAC + QSeal certificate; PSD2 itself is free at the rails layer per the directive.
+    entries:
+      - label: PSD2 production
+        name: psd2_production
+        type: subscription
+        metric: contract
+        limit: -1
+        timeFrame: year
+        geo: EU
+        unit: 1
+        price: free per PSD2 — TPP-licence cost borne by the TPP
+        userMultiplied: false
+    elements:
+      - name: PSD2 Payment Initiation production
+      - name: Requires eIDAS QWAC + QSeal
+      - name: Licensed PISP / AISP only
+  - id: abn-amro-business-production
+    name: Business / Tikkie Production
+    type: enterprise
+    description: Production access for Tikkie Business and the corporate Business Account Payment API is bundled with the underlying ABN AMRO commercial product subscription.
+    entries:
+      - label: Business contract
+        name: business_contract
+        type: subscription
+        metric: contract
+        limit: -1
+        timeFrame: year
+        geo: NL
+        unit: 1
+        price: contact ABN AMRO Account Manager
+        userMultiplied: false
+    elements:
+      - name: Tikkie Business
+      - name: Business Account Payment API
+      - name: Pricing follows underlying ABN AMRO commercial banking contract
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

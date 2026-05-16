@@ -1,0 +1,64 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: ABN AMRO
+providerId: abn-amro
+created: '2026-05-16'
+modified: '2026-05-16'
+reconciled: false
+tags:
+  - Financial
+  - Open Banking
+  - PSD2
+  - FinOps
+  - FOCUS
+description: ABN AMRO does not invoice per API call. PSD2 production access is free per the directive (TPPs bear their own licence and eIDAS-certificate cost). Tikkie and Business Account Payment usage is invoiced through the underlying ABN AMRO commercial banking product, not through a metered API surface.
+notes: No metered API invoice — costs flow through the regulator-mandated PSD2 framework or the underlying business-banking contract.
+sources:
+  - https://developer.abnamro.com/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: ABN AMRO Bank N.V.
+serviceCategory: Financial Services / Open Banking
+billingModel:
+  pricingCategory: Contract
+  billingFrequency: Per-Invoice
+  billingCurrency: EUR
+  chargeCategories:
+    - Purchase
+focusColumns:
+  ServiceName: ABN AMRO Developer APIs
+  ServiceCategory: Financial Services / Open Banking
+  ProviderName: ABN AMRO
+  PublisherName: ABN AMRO Bank N.V.
+  InvoiceIssuerName: ABN AMRO Bank N.V.
+  BillingCurrency: EUR
+meters:
+  - name: psd2_production
+    description: PSD2 production access — not a metered unit; cost is regulatory (TPP licence + eIDAS) rather than per-API-call.
+    unit: licence
+    aggregation: count
+    dimensions:
+      - tpp
+  - name: business_contract
+    description: Business-banking contract underlying Tikkie Business and Business Account Payment usage.
+    unit: contract
+    aggregation: count
+    dimensions:
+      - customer
+principles:
+  - name: Visibility
+    description: Track Tikkie and Business-API usage against the linked commercial banking invoice and against any TPP-side eIDAS certificate spend.
+  - name: Allocation
+    description: Allocate Tikkie Business cost to the merchant / payment-collection cost centre and Business Account Payment cost to corporate treasury.
+  - name: Optimization
+    description: Optimize by consolidating PSD2 traffic within the 4-call/day unattended AIS limit and batching payments where the underlying SEPA rail allows.
+  - name: Accountability
+    description: Treasury / payments leadership owns the ABN AMRO relationship; integration teams own the developer-portal credentials and certificate lifecycle.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
