@@ -1,0 +1,29 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.abnamro.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 24 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: developer.abnamro.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 20 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 31557600
+domains:
+- domain: abnamro.com
+  dnssec: true
+  caa:
+  - 0 issue "awstrust.com"
+  - 0 issue "amazon.com"
+  - 0 issue "sectigo.com"
+  - 0 issuewild ";"
+  - 0 issue "amazontrust.com"
+  - 0 issue "quovadisglobal.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

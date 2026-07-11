@@ -59,6 +59,10 @@ apis:
         type: ReferenceDocumentation
     description: 'Corporate / business-account payment API used by ABN AMRO commercial customers to initiate payments from their own corporate accounts and retrieve transaction status. Uses OAuth 2.0 client-credentials with mTLS.'
 common:
+  - type: VulnerabilityDisclosure
+    url: security/abn-amro-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/abn-amro-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/ABNAMRO
   - type: LinkedIn
