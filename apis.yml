@@ -89,6 +89,12 @@ apis:
         type: ReferenceDocumentation
     description: 'Corporate / business-account payment API used by ABN AMRO commercial customers to initiate payments from their own corporate accounts and retrieve transaction status. Uses OAuth 2.0 client-credentials with mTLS.'
 common:
+  - type: Plans
+    url: plans/abn-amro-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/abn-amro-rate-limits.yml
+  - type: FinOps
+    url: finops/abn-amro-finops.yml
   - type: VulnerabilityDisclosure
     url: security/abn-amro-vulnerability-disclosure.yml
   - type: DomainSecurity
