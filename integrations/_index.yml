@@ -105,3 +105,73 @@
     identity_source: wikidata P856 (LEI P1278 or name; labelled provenance step; Kin 2026-10-15 decision 1)
   status: not-a-workflow
   arazzo: null
+- slug: abn-amro-banco-central-do-brasil-authorized-banks
+  label: Banco Central do Brasil authorized banks
+  partner_name: Banco Central do Brasil authorized banks
+  category: Brazil BCB-authorized bank
+  type: register
+  channel: regulator-register
+  evidence: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Banco Central do Brasil authorized banks
+    spec_file: null
+    standard: null
+    role: authorized-bank
+    institution_class: incumbent
+    registrations:
+    - registered_name: BANCO ABN AMRO CLEARING S.A.
+      register_status: authorized-active
+      register_country: BR
+      register_id: CNPJ 03532415
+      segment: Banco Múltiplo
+      matched_domain: abnamro.com
+      matched_by: domain
+      evidence_url: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+      licences:
+      - Banco Múltiplo
+      situation: Autorizada em Atividade
+      tariff_list_confirmed: true
+      domain_source: filed-website
+    signal_note: 'participation only: a Banco Central do Brasil authorisation to operate; no API conformance is
+      published by this register'
+    detected_by: sweep-brazil-bcb-authorized-institutions.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: abn-amro-banco-central-do-brasil-authorized-financial-companies-sociedades
+  label: Banco Central do Brasil authorized financial companies (sociedades)
+  partner_name: Banco Central do Brasil authorized financial companies (sociedades)
+  category: Brazil BCB-authorized financial company (CFI / DTVM / CTVM / FX broker / other)
+  type: register
+  channel: regulator-register
+  evidence: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Banco Central do Brasil authorized financial companies (sociedades)
+    spec_file: null
+    standard: null
+    role: authorized-financial-company
+    institution_class: incumbent
+    registrations:
+    - registered_name: ABN AMRO CLEARING CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.
+      register_status: authorized-active
+      register_country: BR
+      register_id: CNPJ 44527444
+      segment: Sociedade Corretora de TVM
+      matched_domain: abnamro.com
+      matched_by: domain
+      evidence_url: https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento
+      licences:
+      - Sociedade Corretora de TVM
+      situation: Autorizada em Atividade
+      tariff_list_confirmed: true
+      domain_source: filed-website
+    signal_note: 'participation only: a Banco Central do Brasil authorisation to operate; no API conformance is
+      published by this register'
+    detected_by: sweep-brazil-bcb-authorized-institutions.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
