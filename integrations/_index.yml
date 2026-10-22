@@ -32,6 +32,41 @@
       legal_name: ABN AMRO BANK N.V.
       country: NL
     detected_by: sweep-capital-markets.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
+  status: not-a-workflow
+  arazzo: null
+- slug: abn-amro-dnb-public-register-supervised-institutions-netherlands
+  label: DNB public register (supervised institutions, Netherlands)
+  partner_name: DNB public register (supervised institutions, Netherlands)
+  category: Dutch financial supervisory licence (DNB)
+  type: register
+  channel: regulator-register
+  evidence: https://www.dnb.nl/en/public-register/
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: DNB public register (supervised institutions, Netherlands)
+    spec_file: null
+    standard: null
+    role: licensed-participant
+    registrations:
+    - registered_name: ABN AMRO Bank N.V.
+      licences:
+      - banks
+      - 2:108 Branch banking to EEA
+      - 2:110 Provision of bank services to EEA
+      - 2:111 Branch banking to non-EEA
+      register_country: NL
+      matched_domain: abnamro.com
+      matched_by: domain
+      brand: ABN AMRO Bank N.V. - ABN AMRO
+      register_id: DNB B0149
+      lei: BFXS5XCH7N0Y05NIXW11
+      identity: wikidata Q287471 (LEI P1278) P856 http://www.abnamro.com/
+    signal_note: 'participation only: a supervisory licence / authorisation; no API conformance is published by
+      this register'
+    detected_by: sweep-dach-financial-registers.py
+    detected: '2026-10-21'
+    identity_source: wikidata P856 (LEI P1278 or name; labelled provenance step; Kin 2026-10-15 decision 1)
   status: not-a-workflow
   arazzo: null
