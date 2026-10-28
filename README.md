@@ -1,4 +1,4 @@
-# ABN AMRO (abn-amro)
+# ABN AMRO
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,120 +66,106 @@
 
 A Dutch banking and financial services group serving retail, private, and corporate clients across Europe. ABN AMRO publishes a public developer portal exposing PSD2 Open Banking, Tikkie payment-request, and corporate payment APIs.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/abn-amro/refs/heads/main/apis.yml)
+**Areas:** Finance · Banks · European Banking · Open Banking · PSD2 · Payments
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=abn-amro-api-evangelist&utm_content=repo)
+## ABN AMRO on APIs.io
 
-## Tags:
+Everything profiled for ABN AMRO is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/abn-amro/](https://apis.io/providers/abn-amro/)** — or go straight to one of the APIs or properties below.
 
- - Financial, Banks, European Banking, Open Banking, PSD2, Payments
+### APIs (3)
 
-## Timestamps
+- [Tikkie API](https://apis.io/apis/abn-amro/tikkie/) — The Tikkie API lets Tikkie Business customers programmatically create payment requests, send them to end-payers, and receive notifications when payments…
+- [Payment Initiation (PSD2) API](https://apis.io/apis/abn-amro/payment-initiation-psd2/) — PSD2-compliant Payment Initiation Service (PIS) API allowing licensed Third Party Providers (TPPs) to initiate SEPA payments from an ABN AMRO retail or…
+- [Business Account Payment API](https://apis.io/apis/abn-amro/business-account-payment/) — Corporate / business-account payment API used by ABN AMRO commercial customers to initiate payments from their own corporate accounts and retrieve…
 
-- **Created:** 2026-05-05
-- **Modified:** 2026-05-16
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Tikkie API
-The Tikkie API lets Tikkie Business customers programmatically create payment requests, send them to end-payers, and receive notifications when payments complete.
+#### Security (2)
 
-**Human URL:** [https://developer.abnamro.com/api-products/tikkie/overview](https://developer.abnamro.com/api-products/tikkie/overview)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Abn Amro Domain Security](https://apis.io/security/abn-amro/abn-amro-domain-security/)
+- [Abn Amro Vulnerability Disclosure](https://apis.io/security/abn-amro/abn-amro-vulnerability-disclosure/)
 
- - Payments, Payment Requests, Consumer Finance
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://developer.abnamro.com/api-products/tikkie/overview)
-- [ReferenceDocumentation](https://developer.abnamro.com/api-products/tikkie/reference-documentation)
+- [Abn Amro Plans Pricing](https://apis.io/plans/abn-amro/abn-amro-plans-pricing/)
 
-### Payment Initiation (PSD2) API
-PSD2-compliant Payment Initiation Service allowing licensed Third Party Providers (TPPs) to initiate SEPA payments from ABN AMRO accounts. Requires a PSD2 eIDAS certificate.
+#### Rate limits (1)
 
-**Human URL:** [https://developer.abnamro.com/api-products/payment-initiation-psd2/overview](https://developer.abnamro.com/api-products/payment-initiation-psd2/overview)
+Published request limits.
 
-#### Tags:
+- [Abn Amro Rate Limits](https://apis.io/rate-limits/abn-amro/abn-amro-rate-limits/)
 
- - Open Banking, PSD2, Payments, Payment Initiation
+#### FinOps (1)
 
-#### Properties
+What the API costs to run, by operation.
 
-- [Documentation](https://developer.abnamro.com/api-products/payment-initiation-psd2/overview)
-- [ReferenceDocumentation](https://developer.abnamro.com/api-products/payment-initiation-psd2/reference-documentation)
+- [Abn Amro Finops](https://apis.io/finops/abn-amro/abn-amro-finops/)
 
-### Business Account Payment API
-Corporate / business-account payment API for ABN AMRO commercial customers to initiate payments and retrieve transaction status. Uses OAuth 2.0 client-credentials with mTLS.
+## Where to find this API
 
-**Human URL:** [https://developer.abnamro.com/api-products/business-account-payment/overview](https://developer.abnamro.com/api-products/business-account-payment/overview)
-
-#### Tags:
-
- - Payments, Corporate Banking, SEPA
-
-#### Properties
-
-- [Documentation](https://developer.abnamro.com/api-products/business-account-payment/overview)
-- [ReferenceDocumentation](https://developer.abnamro.com/api-products/business-account-payment/reference-documentation)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.abnamro.com/)
-- [Portal](https://developer.abnamro.com/)
 - [Documentation](https://developer.abnamro.com/)
-- [GettingStarted](https://developer.abnamro.com/get-started)
-- [TermsOfService](https://developer.abnamro.com/content/terms-and-conditions)
+- [Getting started](https://developer.abnamro.com/get-started)
+- [Terms of service](https://developer.abnamro.com/content/terms-and-conditions)
+- [GitHub](https://github.com/ABNAMRO)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Payment Requests | Create Tikkie payment requests and receive callbacks when an end-payer settles them. |
-| PSD2 Payment Initiation | Initiate SEPA Credit Transfer and SEPA Instant payments under PSD2 PIS for both retail and business accounts. |
-| Corporate Payments | Submit own-account corporate payments and retrieve detailed transaction status. |
-| OAuth 2.0 Authorization | Authorization Code (with PKCE) and Client Credentials flows for licensed TPPs and direct business clients. |
-| eIDAS Certificate Onboarding | PSD2 production access uses qualified eIDAS certificates (QWAC + QSeal) for transport and signing. |
-| Sandbox | Public sandbox with test certificates and synthetic accounts for all PSD2 and business-payment APIs. |
+**Kin Score 18.7** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 15.8 |
 
-| Name | Description |
-|------|-------------|
-| Merchant Payment Collection | Use Tikkie to send a one-off or recurring payment request to a customer over a link instead of card-present checkout. |
-| Account-to-Account Checkout | Use PSD2 Payment Initiation as a low-cost alternative to card rails for e-commerce checkout in the Netherlands and EU. |
-| Corporate Treasury Automation | Automate payroll, supplier payments, and treasury transfers from ABN AMRO business accounts. |
-| TPP Aggregation | PSD2 TPPs (PISP role) routing customer-authorized payments through ABN AMRO as one of the Dutch banks they cover. |
+**Agent readiness 3.1** — human-only
 
-## Authentication
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| API Token (Tikkie) | Server-side API token issued via the Tikkie Business portal for Tikkie-only calls. |
-| OAuth 2.0 Authorization Code | Three-legged OAuth 2.0 with PKCE for PSD2 user-consent flows. |
-| OAuth 2.0 Client Credentials + mTLS | Two-legged OAuth 2.0 with mutual TLS using eIDAS QWAC for PSD2 and business-account APIs. |
-| eIDAS Qualified Certificates | PSD2 production access requires QWAC for transport and QSeal for request signing per Berlin Group NextGenPSD2. |
+**Regulatory alignment 18.1** — Banking & Open Finance
 
-## Compliance
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/abn-amro/](https://apis.io/providers/abn-amro/).
 
-| Name | Description |
-|------|-------------|
-| PSD2 | Revised Payment Services Directive (EU 2015/2366) — ABN AMRO is a regulated ASPSP exposing PIS and AIS endpoints. |
-| Berlin Group NextGenPSD2 | ABN AMRO follows the Berlin Group NextGenPSD2 XS2A framework for its PSD2 APIs. |
-| GDPR | General Data Protection Regulation compliance for personal data processed by the APIs. |
-| DNB / ECB Supervision | Supervised by De Nederlandsche Bank (DNB) and indirectly by the European Central Bank as a significant institution. |
-| ISO 20022 | SEPA payment payloads align with ISO 20022 pain.* and camt.* messages where applicable. |
+## How this profile is made
 
-## Integrations
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-| Name | Description |
-|------|-------------|
-| Tikkie | ABN AMRO subsidiary providing the Tikkie consumer and business payment-request product. |
-| Berlin Group XS2A | Common European PSD2 specification used by ABN AMRO and most Dutch and German banks. |
-| Open Banking Aggregators | PSD2 aggregators (e.g., Tink, TrueLayer, Plaid Europe) connect to ABN AMRO via the PSD2 endpoints. |
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ABN AMRO: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-## Maintainers
+## Open an issue
 
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/abn-amro/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
